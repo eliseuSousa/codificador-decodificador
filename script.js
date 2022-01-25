@@ -89,6 +89,11 @@ function validaDados(dados) {
 
         alert("Insira uma mensagem");
         return false;
+    } 
+    else if (/[0-9]/.test(dados)) {
+
+        alert("Não são permitidos números");
+        return false;
     }
     else if(/[A-Z]/.test(dados)) {
 
